@@ -10,7 +10,7 @@ var colection = {
     },
 
     "2365": {
-        "XDD": "aName",
+        "XDD": "test-run",
         "nik": "g",
         "tracks": [
             "imFuckingTired",
