@@ -21,5 +21,4 @@ var colection = {
 
 console.log(Object.values(colection)[0].tracks[0]);
 console.log("hi");
-console.log("i think i understand something XD")
-console.log("a change");
+
