@@ -1,24 +1,16 @@
+  
+const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+const btn = document.getElementById("btn");
+const color = document.querySelector(".color");
 
-var colection = {
-    "2548": {
-        "album": "lolBTW",
-        "artist": "gey",
-        "tracks": [
-            "imFuckingTired",
-            "love is bad name"
-        ]
-    },
+btn.addEventListener("click", function () {
+  const randomNumber = getRandomNumber();
+  // console.log(randomNumber);
 
-    "2365": {
-        "XDD": "test-run",
-        "nik": "g",
-        "tracks": [
-            "imFuckingTired",
-            "love is bad name"
-        ]
-    }
+  document.body.style.backgroundColor = colors[randomNumber];
+  color.textContent = colors[randomNumber];
+});
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * colors.length);
 }
-
-console.log(Object.values(colection)[0].tracks[0]);
-console.log("lon onn the main branch");
-
